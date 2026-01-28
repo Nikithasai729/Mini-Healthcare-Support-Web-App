@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Healthcare Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏥 Healthcare Support Portal</h1>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Patient Support Form</h2>
+        <input type="text" id="pname" placeholder="Patient Name">
+        <input type="text" id="issue" placeholder="Health Issue">
+        <button onclick="submitPatient()">Submit</button>
+        <p id="patientMsg"></p>
+    </div>
+
+    <div class="box">
+        <h2>Volunteer Registration</h2>
+        <input type="text" id="vname" placeholder="Volunteer Name">
+        <input type="text" id="skills" placeholder="Skills">
+        <button onclick="submitVolunteer()">Register</button>
+        <p id="volunteerMsg"></p>
+    </div>
+
+    <div class="box chatbot">
+        <h2>🤖 Healthcare FAQ Bot</h2>
+        <input type="text" id="chatInput" placeholder="Ask a question...">
+        <button onclick="chatBot()">Ask</button>
+        <p id="chatReply"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
